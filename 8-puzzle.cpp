@@ -32,7 +32,7 @@ int GetHn(position x,position y,choice next_step){
     int i,j;
     xt=x+change[next_step][0];
     yt=y+change[next_step][1];
-    if(xt<0||xt>2||yt<0||yt>2) return 100;//¿¿¿¿¿¿¿¿¿
+    if(xt<0||xt>2||yt<0||yt>2) return 100;//ç›´æŽ¥åŽ»é™¤è¾¹ç•Œå¤–æƒ…å†µ
     puzzle[x][y]=puzzle[xt][yt];
     puzzle[xt][yt]=0;
     for(i=0;i<3;i++){
@@ -72,7 +72,7 @@ int main(){
         }
         for(i=0,mini=1000,t=0;i<4;i++){
             cout<<hn[i]<<' ';
-            if(hn[i]<=mini&&i+pre_step!=3){//¿¿¿¿¿¿¿
+            if(hn[i]<=mini&&i+pre_step!=3){//é˜²æ­¢å›žåˆ°ä¸Šä¸€æ­¥
                 mini=hn[i];
                 t=i;
             }
